@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天空サウナ｜SUGOMoRIリゾート生野高原 – 標高600mの絶景プライベートサウナ</title>
+  <meta name="description" content="関西では体験できない、標高600mの天空サウナ。電気サウナ4名収容・シャワー完備・絶景外気浴。追加6,600円で楽しめる完全予約制プライベートサウナ。兵庫県朝来市・生野高原のSUGOMoRIリゾートで特別なひとときを。">
+  <meta name="keywords" content="天空サウナ 兵庫, サウナ 貸切 関西, 外気浴 絶景 関西, 生野高原 サウナ, SUGOMoRI サウナ, サウナ 兵庫 コテージ">
+
+  <!-- OGP -->
+  <meta property="og:title" content="天空サウナ｜SUGOMoRIリゾート生野高原">
+  <meta property="og:description" content="標高600mの空の下、4名でプライベートサウナ。追加6,600円。3部制で宿泊者のみ予約可能。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sugomori.hyogo.jp/sauna/">
+  <meta property="og:image" content="images/20260306_1.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── CSS Variables ─────────────────────────────────────── */
+    :root {
+      --brand-dark:   #004353;
+      --brand-green:  #81d742;
+      --brand-green2: #3a9100;
+      --sauna-amber:  #c8780a;
+      --sauna-red:    #b03a2e;
+      --text-dark:    #1a1a1a;
+      --text-mid:     #555;
+      --bg-warm:      #faf7f2;
+      --bg-section:   #f2efe9;
+      --white:        #ffffff;
+      --border:       #ddd;
+    }
+
+    /* ── Reset & Base ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      color: var(--text-dark);
+      background: var(--white);
+      line-height: 1.75;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Sticky Header ─────────────────────────────────────── */
+    .site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(0,67,83,0.95);
+      backdrop-filter: blur(6px);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 24px;
+    }
+    .site-header .logo {
+      color: var(--white);
+      font-size: 0.78rem;
+      line-height: 1.3;
+    }
+    .site-header .logo span {
+      display: block;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .header-cta {
+      background: var(--brand-green);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 9px 20px;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .header-cta:hover { background: var(--brand-green2); }
+
+    /* ── HERO ──────────────────────────────────────────────── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      padding: 80px 24px 60px;
+      background:
+        linear-gradient(to bottom,
+          rgba(0,15,25,0.70) 0%,
+          rgba(0,20,35,0.65) 35%,
+          rgba(0,30,45,0.60) 55%,
+          rgba(80,30,0,0.72) 80%,
+          rgba(50,10,0,0.85) 100%),
+        url('images/20260306_1.jpg') center/cover no-repeat;
+    }
+    .hero > * { position: relative; z-index: 1; }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #f5d79e;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    .hero-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(2rem, 6vw, 3.6rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.9), 0 4px 24px rgba(0,0,0,0.7);
+    }
+    .hero-title em { font-style: normal; color: #f5c842; }
+    .hero-sub {
+      font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 36px;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.9), 0 2px 16px rgba(0,0,0,0.7);
+    }
+    .hero-badges {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+    .hero-badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.35);
+      color: var(--white);
+      font-size: 0.78rem;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    .hero-cta-wrap { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .btn-primary {
+      background: var(--brand-green);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 16px 36px;
+      border-radius: 6px;
+      border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--brand-green2); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 15px 28px;
+      border-radius: 6px;
+      border: 2px solid rgba(255,255,255,0.7);
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.12); }
+    .hero-note { margin-top: 18px; font-size: 0.75rem; color: rgba(255,255,255,0.65); }
+    .hero-scroll {
+      position: absolute; bottom: 24px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.6);
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      animation: bounce 2s infinite;
+    }
+    .hero-scroll::after { content: '▼'; display: block; text-align: center; margin-top: 4px; }
+    @keyframes bounce {
+      0%,100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(6px); }
+    }
+
+    /* ── Section Shared ────────────────────────────────────── */
+    section { padding: 72px 24px; }
+    .container { max-width: 900px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      color: var(--sauna-amber);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .section-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 700;
+      color: var(--brand-dark);
+      line-height: 1.35;
+      margin-bottom: 14px;
+    }
+    .section-lead {
+      font-size: 1rem;
+      color: var(--text-mid);
+      max-width: 640px;
+      margin-bottom: 48px;
+    }
+
+    /* ── PHOTO STRIP ───────────────────────────────────────── */
+    .photo-strip {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 4px;
+      height: 360px;
+    }
+    .photo-strip .photo {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .photo-strip .photo:first-child { grid-row: span 2; }
+    @media (max-width: 600px) {
+      .photo-strip {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 300px;
+      }
+      .photo-strip .photo:first-child { grid-row: span 2; }
+    }
+
+    /* ── 3 FEATURES ────────────────────────────────────────── */
+    .features { background: var(--bg-warm); }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .feature-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 0;
+      text-align: center;
+      box-shadow: 0 2px 16px rgba(0,67,83,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: 0 6px 28px rgba(0,67,83,0.13); }
+    .feature-card-img { width: 100%; height: 200px; background-size: cover; background-position: center; }
+    .feature-card-body { padding: 24px 24px 28px; }
+    .feature-icon { font-size: 2rem; margin-bottom: 10px; }
+    .feature-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--brand-dark); margin-bottom: 10px; }
+    .feature-card p { font-size: 0.88rem; color: var(--text-mid); line-height: 1.7; }
+
+    /* ── TIMELINE ──────────────────────────────────────────── */
+    .timeline-section { background: var(--brand-dark); color: var(--white); }
+    .timeline-section .section-title { color: var(--white); }
+    .timeline-section .section-lead { color: rgba(255,255,255,0.75); }
+    .sessions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+    .session-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 10px;
+      padding: 28px 24px;
+    }
+    .session-number {
+      display: inline-block;
+      background: var(--sauna-amber);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 3px 10px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    .session-time { font-size: 1.3rem; font-weight: 700; color: #f5c842; margin-bottom: 6px; }
+    .session-label { font-size: 0.9rem; color: rgba(255,255,255,0.8); }
+    .timeline { position: relative; padding-left: 28px; }
+    .timeline::before {
+      content: '';
+      position: absolute; left: 6px; top: 8px; bottom: 8px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--sauna-amber), rgba(200,120,10,0.1));
+    }
+    .timeline-item { position: relative; margin-bottom: 28px; }
+    .timeline-item::before {
+      content: '';
+      position: absolute; left: -24px; top: 6px;
+      width: 14px; height: 14px;
+      background: var(--sauna-amber);
+      border-radius: 50%;
+      border: 2px solid var(--brand-dark);
+    }
+    .timeline-time { font-size: 0.78rem; color: #f5c842; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 2px; }
+    .timeline-event { font-size: 0.95rem; color: rgba(255,255,255,0.9); }
+    .timeline-note { font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-top: 2px; }
+
+    /* ── SPECS ─────────────────────────────────────────────── */
+    .specs-section { background: var(--bg-section); }
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-top: 40px;
+    }
+    .spec-item {
+      background: var(--white);
+      border-left: 4px solid var(--sauna-amber);
+      border-radius: 0 8px 8px 0;
+      padding: 18px 20px;
+    }
+    .spec-label { font-size: 0.72rem; letter-spacing: 0.1em; color: var(--sauna-amber); font-weight: 700; margin-bottom: 6px; }
+    .spec-value { font-size: 1rem; font-weight: 700; color: var(--brand-dark); }
+    .spec-note { font-size: 0.75rem; color: var(--text-mid); margin-top: 4px; }
+
+    /* ── PRICING ───────────────────────────────────────────── */
+    .pricing-section { background: var(--white); }
+    .price-box {
+      background: var(--bg-warm);
+      border: 2px solid var(--brand-dark);
+      border-radius: 16px;
+      padding: 48px 36px;
+      text-align: center;
+      max-width: 520px;
+      margin: 40px auto 0;
+    }
+    .price-label { font-size: 0.8rem; letter-spacing: 0.12em; color: var(--text-mid); margin-bottom: 8px; }
+    .price-main { font-size: clamp(2.4rem, 6vw, 3.2rem); font-weight: 900; color: var(--brand-dark); line-height: 1; }
+    .price-main span { font-size: 1.2rem; font-weight: 400; }
+    .price-sub { font-size: 0.82rem; color: var(--text-mid); margin-top: 8px; margin-bottom: 24px; }
+    .price-includes { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 32px; }
+    .price-tag { background: rgba(0,67,83,0.08); color: var(--brand-dark); font-size: 0.8rem; font-weight: 500; padding: 6px 14px; border-radius: 20px; }
+    .price-note { font-size: 0.75rem; color: var(--text-mid); margin-top: 16px; text-align: left; line-height: 1.8; list-style: none; }
+    .price-note li { padding-left: 1em; position: relative; }
+    .price-note li::before { content: '※'; position: absolute; left: 0; }
+
+    /* ── GUIDE ─────────────────────────────────────────────── */
+    .guide-section { background: var(--bg-section); }
+    .guide-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 40px; }
+    .guide-card { background: var(--white); border-radius: 10px; padding: 24px 22px; }
+    .guide-card h3 { font-size: 0.95rem; font-weight: 700; color: var(--brand-dark); margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .guide-card ul { list-style: none; font-size: 0.87rem; color: var(--text-mid); line-height: 1.85; }
+    .guide-card ul li::before { content: '・'; color: var(--sauna-amber); }
+
+    /* ── FAQ ───────────────────────────────────────────────── */
+    .faq-section { background: var(--white); }
+    .faq-list { margin-top: 40px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+    .faq-q { font-weight: 700; color: var(--brand-dark); font-size: 0.95rem; margin-bottom: 10px; display: flex; gap: 10px; }
+    .faq-q::before {
+      content: 'Q';
+      background: var(--brand-dark);
+      color: var(--white);
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .faq-a { font-size: 0.88rem; color: var(--text-mid); padding-left: 32px; line-height: 1.8; }
+    .faq-a strong { color: var(--brand-dark); }
+
+    /* ── FINAL CTA ─────────────────────────────────────────── */
+    .cta-section {
+      background: linear-gradient(135deg, var(--brand-dark) 0%, #002a36 100%);
+      color: var(--white);
+      text-align: center;
+      padding: 80px 24px;
+    }
+    .cta-section .section-title { color: var(--white); }
+    .cta-section .section-lead { color: rgba(255,255,255,0.8); margin: 0 auto 36px; }
+    .cta-wrap { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+    .btn-large {
+      background: var(--brand-green);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 18px 48px;
+      border-radius: 6px;
+      display: inline-block;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-large:hover { background: var(--brand-green2); transform: translateY(-2px); }
+    .btn-large-outline {
+      background: transparent;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 17px 36px;
+      border-radius: 6px;
+      border: 2px solid rgba(255,255,255,0.5);
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .btn-large-outline:hover { background: rgba(255,255,255,0.1); }
+    .cta-note { margin-top: 20px; font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+
+    /* ── FOOTER ────────────────────────────────────────────── */
+    .lp-footer {
+      background: #001a22;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.75rem;
+    }
+    .lp-footer a { color: rgba(255,255,255,0.65); }
+    .lp-footer .back-link { display: inline-block; margin-bottom: 12px; font-size: 0.8rem; }
+
+    /* ── Responsive ────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      section { padding: 56px 20px; }
+      .price-box { padding: 36px 24px; }
+      .hero { min-height: 100svh; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ STICKY HEADER ══ -->
+  <header class="site-header">
+    <div class="logo">
+      SUGOMoRIリゾート 生野高原
+      <span>天空サウナ</span>
+    </div>
+    <a href="https://reserve.489ban.net/client/sugomori-hyogo/0/plan/availability/room/"
+       class="header-cta" target="_blank" rel="noopener">
+      宿泊＋サウナを予約
+    </a>
+  </header>
+
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="top">
+    <div>
+      <p class="hero-eyebrow">TENKU SAUNA — 標高600m</p>
+      <h1 class="hero-title">
+        関西では、ここだけ。<br>
+        <em>天空のサウナ</em>で、<br>整う。
+      </h1>
+      <p class="hero-sub">
+        雲の上の外気浴。夕日と星空が、サウナの熱を最高の体験に変える。<br>
+        生野高原でしか味わえない、プライベートサウナの時間。
+      </p>
+      <div class="hero-badges">
+        <span class="hero-badge">⚡ 電気サウナ</span>
+        <span class="hero-badge">👥 最大4名</span>
+        <span class="hero-badge">🚿 シャワー完備</span>
+        <span class="hero-badge">🌙 Westエリア優先</span>
+        <span class="hero-badge">📅 完全予約制</span>
+        <span class="hero-badge">❄️ 通年営業</span>
+      </div>
+      <div class="hero-cta-wrap">
+        <a href="https://reserve.489ban.net/client/sugomori-hyogo/0/plan/availability/room/"
+           class="btn-primary" target="_blank" rel="noopener">
+          宿泊＋サウナを予約する
+        </a>
+        <a href="#spec" class="btn-outline">サウナ詳細を見る</a>
+      </div>
+      <p class="hero-note">宿泊料金 ＋ サウナ追加料金 6,600円（税込）</p>
+    </div>
+    <div class="hero-scroll">SCROLL</div>
+  </section>
+
+
+  <!-- ══ PHOTO STRIP ══ -->
+  <div class="photo-strip">
+    <div class="photo" style="background-image:url('images/20260306_2.jpg');"></div>
+    <div class="photo" style="background-image:url('images/20260306_3.jpeg');"></div>
+    <div class="photo" style="background-image:url('images/20260306_4.jpeg');"></div>
+  </div>
+
+
+  <!-- ══ 3 FEATURES ══ -->
+  <section class="features">
+    <div class="container">
+      <p class="section-label">FEATURES</p>
+      <h2 class="section-title">天空サウナが<br>特別な理由</h2>
+      <p class="section-lead">関西エリアで、これだけの環境でサウナを楽しめる場所はほとんどありません。</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-card-img" style="background-image:url('images/20260306_4.jpeg'); background-position: center 30%;"></div>
+          <div class="feature-card-body">
+            <div class="feature-icon">🌅</div>
+            <h3>絶景の外気浴</h3>
+            <p>標高600mの生野高原から望む山並みと夕日。夜は満天の星空。外気浴の質が、都市のサウナとまったく違います。</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-img" style="background-image:url('images/20260306_5.jpeg');"></div>
+          <div class="feature-card-body">
+            <div class="feature-icon">🔑</div>
+            <h3>完全プライベート</h3>
+            <p>最大4名まで、予約した時間は貸切。見知らぬ人の目を気にせず、仲間や大切な人と心ゆくまで楽しめます。</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card-img" style="background-image:url('images/20260306_6.jpg');"></div>
+          <div class="feature-card-body">
+            <div class="feature-icon">🏔️</div>
+            <h3>通年・天候不問</h3>
+            <p>冬の雪景色を眺めながらの外気浴、夏は高原の涼しい風。季節・天候を問わず、いつでも利用できます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TIMELINE ══ -->
+  <section class="timeline-section">
+    <div class="container">
+      <p class="section-label">TIME SCHEDULE</p>
+      <h2 class="section-title">3部制で選べる時間帯</h2>
+      <p class="section-lead">
+        宿泊予約と同時にサウナの時間帯を選択できます。<br>
+        夕日に染まる夕方枠、星空の夜枠、朝の静寂を楽しむ朝枠。
+      </p>
+      <div class="sessions">
+        <div class="session-card">
+          <span class="session-number">第1部</span>
+          <div class="session-time">16:00 – 18:00</div>
+          <div class="session-label">🌅 夕暮れ枠<br>チェックイン直後から夕日を楽しむ</div>
+        </div>
+        <div class="session-card">
+          <span class="session-number">第2部</span>
+          <div class="session-time">19:00 – 21:00</div>
+          <div class="session-label">🌙 星空枠<br>夕食後に星空と外気浴</div>
+        </div>
+        <div class="session-card">
+          <span class="session-number">第3部</span>
+          <div class="session-time">08:30 – 10:30</div>
+          <div class="session-label">🌿 早朝枠<br>チェックアウト前に朝サウナ</div>
+        </div>
+      </div>
+      <h3 style="color:#f5c842; font-size:1rem; margin-bottom:20px; font-family:'Noto Serif JP',serif;">
+        カップル推奨：第1部（夕日）体験の流れ
+      </h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-time">15:00</div>
+          <div class="timeline-event">チェックイン。棟で荷物を置いてひと息</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">16:00</div>
+          <div class="timeline-event">天空サウナへ移動・着火・準備</div>
+          <div class="timeline-note">スタッフが事前に電気サウナを温めておきます</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">16:20</div>
+          <div class="timeline-event">1セット目。サウナで汗をかく（10〜15分）</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">16:35</div>
+          <div class="timeline-event">🌅 外気浴。夕日を眺めながら椅子でととのう</div>
+          <div class="timeline-note">この瞬間のために来る価値があります</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">17:00</div>
+          <div class="timeline-event">2セット目 → シャワー → 外気浴</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">17:40</div>
+          <div class="timeline-event">3セット目（お好みで）</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">18:00</div>
+          <div class="timeline-event">棟に戻り、BBQの準備へ</div>
+          <div class="timeline-note">サウナ後のBBQは格別においしく感じられます</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">19:00〜</div>
+          <div class="timeline-event">オーベルジュカッセルでのディナーも選択可</div>
+          <div class="timeline-note">但馬牛フルコース・送迎付きオプション（要別途予約）</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">20:30〜</div>
+          <div class="timeline-event">✨ 棟から星空観察</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ SPECS ══ -->
+  <section class="specs-section" id="spec">
+    <div class="container">
+      <p class="section-label">SAUNA SPEC</p>
+      <h2 class="section-title">サウナ仕様詳細</h2>
+      <p class="section-lead">サウナを愛する方へ。設備の詳細をご確認ください。</p>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="spec-label">SAUNA TYPE</div>
+          <div class="spec-value">電気サウナ</div>
+          <div class="spec-note">安定した高温環境。スタッフが事前に温めて準備します</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">CAPACITY</div>
+          <div class="spec-value">最大 4名</div>
+          <div class="spec-note">グループ・カップル・ご家族での貸切利用</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">SHOWER</div>
+          <div class="spec-value">温水シャワー完備</div>
+          <div class="spec-note">サウナ後のシャワーとして利用可能</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">OUTDOOR</div>
+          <div class="spec-value">外気浴チェア</div>
+          <div class="spec-note">山並みと空を望む外気浴スペース</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">LOCATION</div>
+          <div class="spec-value">Westエリア優先</div>
+          <div class="spec-note">VillaKoti / TreeKoti / DomeKoti 501・502・651</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">SEASON</div>
+          <div class="spec-value">通年 / 天候不問</div>
+          <div class="spec-note">季節・天候制限なし。冬も夏も楽しめます</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">RESERVATION</div>
+          <div class="spec-value">宿泊予約時に同時予約</div>
+          <div class="spec-note">当日の空き次第での追加も応相談</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">SESSION</div>
+          <div class="spec-value">3部制（各2時間）</div>
+          <div class="spec-note">①16-18時　②19-21時　③8:30-10:30</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ PRICING ══ -->
+  <section class="pricing-section">
+    <div class="container" style="text-align:center;">
+      <p class="section-label">PRICING</p>
+      <h2 class="section-title">ご利用料金</h2>
+      <div class="price-box">
+        <div class="price-label">サウナ追加料金（1回・貸切）</div>
+        <div class="price-main">6,600<span>円</span></div>
+        <div class="price-sub">税込 ／ 最大4名まで同額（1グループにつき）</div>
+        <div class="price-includes">
+          <span class="price-tag">⚡ 電気サウナ利用</span>
+          <span class="price-tag">🌿 外気浴チェア</span>
+          <span class="price-tag">🚿 温水シャワー</span>
+          <span class="price-tag">⏱ 2時間貸切</span>
+        </div>
+        <a href="https://reserve.489ban.net/client/sugomori-hyogo/0/plan/availability/room/"
+           class="btn-primary" style="width:100%; text-align:center;"
+           target="_blank" rel="noopener">
+          宿泊＋サウナをまとめて予約する
+        </a>
+        <ul class="price-note">
+          <li>宿泊料金に上記のサウナ追加料金6,600円が加算されます</li>
+          <li>宿泊予約時にサウナの時間帯をご指定ください</li>
+        </ul>
+        <div style="margin-top:20px; background:#f0f8fb; border-radius:10px; padding:18px 20px; text-align:left;">
+          <p style="font-size:0.8rem; font-weight:700; color:#004353; margin-bottom:10px; letter-spacing:0.08em;">🏡 天空サウナ優先予約対象棟（Westエリア）</p>
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px;">
+            <span style="background:#004353; color:#fff; font-size:0.78rem; padding:4px 12px; border-radius:20px;">VillaKoti</span>
+            <span style="background:#004353; color:#fff; font-size:0.78rem; padding:4px 12px; border-radius:20px;">TreeKoti</span>
+            <span style="background:#004353; color:#fff; font-size:0.78rem; padding:4px 12px; border-radius:20px;">DomeKoti 501</span>
+            <span style="background:#004353; color:#fff; font-size:0.78rem; padding:4px 12px; border-radius:20px;">DomeKoti 502</span>
+            <span style="background:#004353; color:#fff; font-size:0.78rem; padding:4px 12px; border-radius:20px;">DomeKoti 651</span>
+          </div>
+          <p style="font-size:0.78rem; color:#555;">※ その他エリアのお客様にはテントサウナをご用意しています。天空サウナは空き状況次第でご利用可能です（フロントへお問合せください）。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ GUIDE ══ -->
+  <section class="guide-section">
+    <div class="container">
+      <p class="section-label">GUIDE</p>
+      <h2 class="section-title">ご利用のご案内</h2>
+      <div class="guide-grid">
+        <div class="guide-card">
+          <h3>🎒 持ち物・服装</h3>
+          <ul>
+            <li>タオル（バスタオル推奨）<br><small style="color:#3a9100; font-weight:500;">✓ レンタルあり</small></li>
+            <li>サウナ着 or 水着（任意）<br><small style="color:#3a9100; font-weight:500;">✓ サウナポンチョ・サウナハットレンタルあり</small></li>
+            <li>サンダル（外気浴スペース用）<br><small style="color:#3a9100; font-weight:500;">✓ 現地設置あり</small></li>
+            <li>水着（任意）<br><small style="color:#3a9100; font-weight:500;">✓ レンタルあり</small></li>
+            <li>水分補給用ドリンク</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <h3>📋 予約方法</h3>
+          <ul>
+            <li>宿泊予約と同時にサウナ枠を選択</li>
+            <li>3部制：①16-18時 ②19-21時 ③8:30-10:30</li>
+            <li>空き状況はご予約フォームでご確認ください</li>
+            <li>当日変更はフロントへご相談ください</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <h3>⚠️ ご注意事項</h3>
+          <ul>
+            <li>飲酒後のご利用はご遠慮ください</li>
+            <li>体調が優れない場合はご利用を控えてください</li>
+            <li>小学生以下のお子様はご利用できません</li>
+            <li>施設内での飲食はお控えください</li>
+            <li>ご利用後は原状回復をお願いします</li>
+          </ul>
+        </div>
+        <div class="guide-card">
+          <h3>🗺️ 場所・移動</h3>
+          <ul>
+            <li>Westエリア（VillaKoti・TreeKoti・DomeKoti 501/502/651）に隣接</li>
+            <li>棟から徒歩数分・チェックイン時にスタッフがご案内</li>
+            <li>夜間は足元に注意ください（懐中電灯推奨）</li>
+            <li>その他エリアのお客様はテントサウナもご利用可能</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FAQ ══ -->
+  <section class="faq-section">
+    <div class="container">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">よくあるご質問</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">水風呂はありますか？</div>
+          <div class="faq-a">水風呂（冷水浴槽）は設置されていません。<strong>温水シャワー</strong>をご利用いただけます。また、標高600mの高原の外気浴は、都市では味わえない自然の涼しさで「ととのい」をサポートします。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">冬でも利用できますか？</div>
+          <div class="faq-a"><strong>通年ご利用いただけます。</strong>天候制限もありません。冬は雪景色を眺めながらの外気浴という、特別な体験ができます。防寒の上着をお持ちいただくことをおすすめします。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">宿泊なしでサウナのみ利用できますか？</div>
+          <div class="faq-a">申し訳ございませんが、<strong>宿泊者専用</strong>のアクティビティとなります。宿泊予約と合わせてサウナのご予約をお願いいたします。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">1人でも利用できますか？</div>
+          <div class="faq-a"><strong>1名様からご利用いただけます。</strong>追加料金は最大4名まで6,600円（1グループあたりの料金）です。1名でご利用の場合も同額となります。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Westエリア以外の棟でも予約できますか？</div>
+          <div class="faq-a">天空サウナはVillaKoti・TreeKoti・DomeKoti 501/502/651（Westエリア）のご宿泊者が<strong>優先予約</strong>となります。その他エリアのお客様には<strong>テントサウナ</strong>をご利用いただけます。また天空サウナに空きがある場合は当日フロントへお問合せいただければご案内可能です。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">子供も一緒に利用できますか？</div>
+          <div class="faq-a">安全上の理由から、<strong>小学生以下のお子様はご利用いただけません。</strong>中学生以上のお子様は保護者の方と一緒であればご利用いただけます。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">タオルは用意されていますか？</div>
+          <div class="faq-a">タオルはレンタルをご利用いただけます。サウナポンチョ・サウナハットのレンタルもございます。手ぶらでお越しいただけます。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FINAL CTA ══ -->
+  <section class="cta-section">
+    <div class="container">
+      <p class="section-label" style="color:#f5c842;">RESERVATION</p>
+      <h2 class="section-title">関西では体験できない<br>天空サウナを予約する</h2>
+      <p class="section-lead">
+        宿泊予約と同時に、サウナの時間帯をお選びください。<br>
+        人気の夕日枠（16-18時）はお早めに。
+      </p>
+      <div class="cta-wrap">
+        <a href="https://reserve.489ban.net/client/sugomori-hyogo/0/plan/availability/room/"
+           class="btn-large" target="_blank" rel="noopener">
+          宿泊＋サウナを予約する
+        </a>
+        <a href="https://sugomori.hyogo.jp/contact/" class="btn-large-outline">
+          お問い合わせ
+        </a>
+      </div>
+      <p class="cta-note">サウナ追加料金 6,600円（税込）／ 最大4名・2時間貸切 ／ 通年営業</p>
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="lp-footer">
+    <a href="https://sugomori.hyogo.jp/" class="back-link">← SUGOMoRIリゾート 生野高原 トップへ</a>
+    <br>
+    〒679-3331 兵庫県朝来市生野町栃原1784-29<br>
+    <br>
+    &copy; SUGOMoRIリゾート 生野高原 All Rights Reserved.
+  </footer>
+
+</body>
+</html>
